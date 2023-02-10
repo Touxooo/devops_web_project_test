@@ -1,10 +1,7 @@
-FROM node:latest
-
-RUN mkdir app
-COPY blog app/
-
-RUN npm i
-EXPOSE 5173
+FROM node
 WORKDIR /app
+COPY package.json .
+RUN npm i
+COPY . .
 
 EXPOSE 5173
