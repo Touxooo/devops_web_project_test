@@ -28,7 +28,7 @@ pipeline {
                     withCredentials( \
                                  [string(credentialsId: 'dockerhub',\
                                  variable: 'dockerhub')]) {
-                        sh "sudo docker login -u nowhanos -p ${dockerhub}"
+                        sh "docker login -u nowhanos -p ${dockerhub}"
                     }
                     app.push("${env.BUILD_ID}")
                  }
