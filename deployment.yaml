@@ -20,7 +20,7 @@ spec:
             - -c
             - npm run dev
           image: nowhanos/pipeline:latest
-          name: simple blog
+          name: simple-blog
           ports:
             - containerPort: 5173
           resources:
