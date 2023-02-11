@@ -3,8 +3,8 @@ pipeline {
     agent any
     environment {
         PROJECT_ID = 'whanos-377316'
-        CLUSTER_NAME = 'autopilot-cluster-1'
-        LOCATION = 'europe-west1-b'
+        CLUSTER_NAME = 'cluster-1'
+        LOCATION = 'europe-west8-a'
         CREDENTIALS_ID = 'kubernetes'
     }
     
